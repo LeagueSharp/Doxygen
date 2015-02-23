@@ -2,24 +2,32 @@
 
 namespace LeagueSharp
 {
-  public class GameNotifyEventArgs : EventArgs
-  {
-    public uint NetworkId
+    /// <summary>
+    ///     Game Notify Event Arguments, contains information about an event identity that is newly passed, to state an event.
+    /// </summary>
+    public class GameNotifyEventArgs : EventArgs
     {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Game Notify Event Arguments Constructor.
+        /// </summary>
+        /// <param name="eventId">Event identity (Id)</param>
+        /// <param name="networkId">Game Network Identity (Id)</param>
+        public GameNotifyEventArgs(GameEventId eventId, uint networkId) {}
 
-    public GameEventId EventId
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Game Network Identity (Id).
+        /// </summary>
+        public uint NetworkId
+        {
+            get { }
+        }
 
-    public GameNotifyEventArgs(GameEventId eventId, uint networkId)
-    {
+        /// <summary>
+        ///     Event identity that is passed (Id).
+        /// </summary>
+        public GameEventId EventId
+        {
+            get { }
+        }
     }
-  }
 }

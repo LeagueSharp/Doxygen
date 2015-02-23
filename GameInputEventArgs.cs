@@ -2,28 +2,33 @@
 
 namespace LeagueSharp
 {
-  public class GameInputEventArgs : EventArgs
-  {
-
-    public bool Process
+    /// <summary>
+    ///     Game Input Event Arguments, contains input information and execution flag for game input event.
+    /// </summary>
+    public class GameInputEventArgs : EventArgs
     {
-      get
-      {
-      }
-      set
-      {
-      }
-    }
+        /// <summary>
+        ///     Game Input Event Arguments Constructor
+        /// </summary>
+        /// <param name="process">Process Input (Execution Flag)</param>
+        /// <param name="input">Input Information (string)</param>
+        public GameInputEventArgs(int process, string input) {}
 
-    public string Input
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Process Input (Execution Flag), can be set to execute or not the current input infromation by the client.
+        /// </summary>
+        public bool Process
+        {
+            get { }
+            set { }
+        }
 
-    public GameInputEventArgs(int process, string input)
-    {
+        /// <summary>
+        ///     Input Information (string), input string that was set to be sent as execution by the client.
+        /// </summary>
+        public string Input
+        {
+            get { }
+        }
     }
-  }
 }
