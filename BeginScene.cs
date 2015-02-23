@@ -2,5 +2,9 @@
 
 namespace LeagueSharp
 {
-  public delegate void BeginScene(EventArgs args);
+    /// <summary>
+    ///     Begins a scene.
+    /// </summary>
+    /// <param name="args">System.EventArgs</param>
+    public delegate void BeginScene(EventArgs args);
 }

@@ -4,116 +4,96 @@ using System;
 
 namespace LeagueSharp
 {
-  /// <summary>
-  /// Defines a BuffInstance
-  /// 
-  /// </summary>
-  public class BuffInstance
-  {
-    public GameObject Caster
-    {
-      get
-      {
-      }
-    }
-
-    public string SourceName
-    {
-      get
-      {
-      }
-    }
-
     /// <summary>
-    /// Gets the internal name of the buff
-    /// 
+    ///     Defines a BuffInstance.
     /// </summary>
-    public string Name
+    public class BuffInstance
     {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Buff Instance.
+        /// </summary>
+        /// <param name="m_networkId">Game Network Identity (ID)</param>
+        /// <param name="index">Buff Instance Index</param>
+        internal BuffInstance(uint m_networkId, uint index) {}
 
-    /// <summary>
-    /// Gets the display name of the buff, e.g. for tooltips
-    /// 
-    /// </summary>
-    public string DisplayName
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Returns the buff's caster.
+        /// </summary>
+        public GameObject Caster
+        {
+            get { }
+        }
 
-    /// <summary>
-    /// Gets the time when the buff will run out
-    /// 
-    /// </summary>
-    public float EndTime
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Returns the buff's source name (string).
+        /// </summary>
+        public string SourceName
+        {
+            get { }
+        }
 
-    /// <summary>
-    /// Returns the starting time of the buff.
-    /// 
-    /// </summary>
-    public float StartTime
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Returns the buff's name (string).
+        /// </summary>
+        public string Name
+        {
+            get { }
+        }
 
-    /// <summary>
-    /// Returns true if the buff is having positive effect
-    /// 
-    /// </summary>
-    public bool IsPositive
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Returns the buff's display name (string).
+        /// </summary>
+        public string DisplayName
+        {
+            get { }
+        }
 
-    /// <summary>
-    /// Returns true if a buff is still active
-    /// 
-    /// </summary>
-    public bool IsActive
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Returns the buff's end time (in float-units).
+        /// </summary>
+        public float EndTime
+        {
+            get { }
+        }
 
-    /// <summary>
-    /// Gets the stack count
-    /// 
-    /// </summary>
-    public int Count
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Returns the buff's starting time (in float-units).
+        /// </summary>
+        public float StartTime
+        {
+            get { }
+        }
 
-    /// <summary>
-    /// Gets the type of the Buff
-    /// 
-    /// </summary>
-    public BuffType Type
-    {
-      get
-      {
-      }
-    }
+        /// <summary>
+        ///     Returns if the buff has a positive effect.
+        /// </summary>
+        public bool IsPositive
+        {
+            get { }
+        }
 
-    internal BuffInstance(uint m_networkId, uint index)
-    {
+        /// <summary>
+        ///     Returns if the buff is active.
+        /// </summary>
+        public bool IsActive
+        {
+            get { }
+        }
+
+        /// <summary>
+        ///     Returns the stack count of the buff.
+        /// </summary>
+        public int Count
+        {
+            get { }
+        }
+
+        /// <summary>
+        ///     Gets the type of the buff.
+        /// </summary>
+        public BuffType Type
+        {
+            get { }
+        }
     }
-  }
 }
