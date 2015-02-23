@@ -7,6 +7,9 @@ using System.Collections.Generic;
 
 namespace LeagueSharp
 {
+    /// <summary>
+    ///     Generic skillshot
+    /// </summary>
   public class Obj_SpellMissile : GameObject
   {
     public GameObject Target

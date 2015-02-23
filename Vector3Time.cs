@@ -2,6 +2,9 @@
 
 namespace LeagueSharp
 {
+    /// <summary>
+    ///     A Vector3 with an added time.
+    /// </summary>
   public struct Vector3Time
   {
     public float Time

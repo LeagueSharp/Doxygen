@@ -4,6 +4,9 @@ using System;
 
 namespace LeagueSharp
 {
+    /// <summary>
+    ///     A skillshot
+    /// </summary>
   public class Obj_SpellLineMissile : Obj_SpellMissile
   {
     public Obj_SpellLineMissile(ushort index, uint networkId)

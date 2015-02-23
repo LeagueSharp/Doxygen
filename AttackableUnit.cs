@@ -3,6 +3,9 @@ using System;
 
 namespace LeagueSharp
 {
+    /// <summary>
+    ///     A unit that is attackable
+    /// </summary>
   public class AttackableUnit : GameObject
   {
     public float PathfindingCollisionRadius
